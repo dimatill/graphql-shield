@@ -4,7 +4,7 @@ title: Rules
 
 # Rules
 
-Rules let you define reusable blocks of permissions that you use in [Shield](./shield). GraphQL Shield packs a collection of general rules that make your permissions easier to write and your rules more reusable. Each rule you create should be easily explicable in one sentantce and should check exactly one permission.
+Rules let you define reusable blocks of permissions that you use in [Shield](./shield). GraphQL Shield packs a collection of general rules that make your permissions easier to write and your rules more reusable. Each rule you create should be easily explicable in one sentence and should check exactly one permission.
 
 For example, it's a good practice to have a rule that checks if someone is an admin and another one that checks if someone owns some data, and a bad practice to have both checks in one rule.
 
@@ -16,7 +16,7 @@ For example, it's a good practice to have a rule that checks if someone is an ad
 
 ## Creating your own rules
 
-To create a new rule, wrap your validation function in `rule` wrapper like in the example below. Your function can take use any parameter from the regular GraphQL resolver function and should return a boolean.
+To create a new rule, wrap your validation function in `rule` wrapper like in the example below. Your function can make use of any parameter from the regular GraphQL resolver function and should return a boolean.
 
 ```ts
 const isAdmin = rule()(async (parent, args, ctx, info) => {
@@ -32,7 +32,7 @@ const isAdmin = rule()(async (parent, args, ctx, info) => {
 function inputRule(name?: string)((yup: Yup, ctx: any) => Yup.Schema, options?: Yup.ValidationOptions): Rule
 ```
 
-Input rule works exactly as any other rule would work. Instead of providing a complex validation rule you can simply provide a Yup validation schema which will be mached against provided arguments.
+Input rule works exactly as any other rule would work. Instead of providing a complex validation rule you can simply provide a Yup validation schema which will be matched against provided arguments.
 This can be especially useful when limiting optional fields such as `create` and `connect` with Prisma, for example.
 
 **Example:**
