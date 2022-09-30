@@ -19,7 +19,7 @@
     "yup": "^0.32.0"
   },
   "devDependencies": {
-    "@graphql-tools/schema": "8.5.1",
+    "@graphql-tools/schema": "9.0.4",
     "@graphql-tools/utils": "8.9.0",
     "@types/node": "18.6.3",
     "@types/object-hash": "2.2.1",
