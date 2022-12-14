@@ -15,7 +15,7 @@
     "apollo-server-express": "^2.14.2",
     "bcrypt": "^3.0.6",
     "cookie-parser": "^1.4.4",
-    "dotenv": "^8.2.0",
+    "dotenv": "^16.0.2",
     "express": "^4.17.1",
     "graphql": "^14.5.8",
     "graphql-middleware": "^4.0.1",
