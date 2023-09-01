@@ -24,7 +24,7 @@
     "@types/node-fetch": "^2.6.2",
     "@types/object-hash": "2.2.1",
     "@types/request-promise-native": "1.0.18",
-    "apollo-server": "3.10.0",
+    "apollo-server": "3.11.1",
     "graphql": "16.5.0",
     "graphql-middleware": "6.1.33",
     "graphql-shield-rules": "0.0.1",
