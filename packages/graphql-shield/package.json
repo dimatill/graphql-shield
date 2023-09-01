@@ -28,7 +28,7 @@
     "graphql": "16.5.0",
     "graphql-middleware": "6.1.33",
     "graphql-shield-rules": "0.0.1",
-    "node-fetch": "^2.6.7"
+    "node-fetch": "^3.3.0"
   },
   "peerDependencies": {
     "graphql": "^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0",
