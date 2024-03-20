@@ -352,7 +352,7 @@ describe('external errors can be controled correctly', () => {
     /* Tests */
 
     expect(res.data).toBeNull()
-    expect(res.errors?.[0]?.message).toBe('Not Authorised!')
+    expect(res.errors?.[0]?.message).toBe('Not Authorized!')
   })
 })
 

@@ -409,8 +409,8 @@ describe('logic rules', () => {
       customRuleErrorString: 'customRuleErrorString',
     })
     expect(res.errors?.map((err) => err.message)).toEqual([
-      'Not Authorised!',
-      'Not Authorised!',
+      'Not Authorized!',
+      'Not Authorized!',
     ])
   })
 

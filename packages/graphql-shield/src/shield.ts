@@ -23,7 +23,7 @@ function normalizeOptions(options: IOptionsConstructor): IOptions {
     debug: options.debug !== undefined ? options.debug : false,
     allowExternalErrors: withDefault(false)(options.allowExternalErrors),
     fallbackRule: withDefault<ShieldRule>(allow)(options.fallbackRule),
-    fallbackError: withDefault<IFallbackErrorType>(new Error('Not Authorised!'))(options.fallbackError),
+    fallbackError: withDefault<IFallbackErrorType>(new Error('Not Authorized!'))(options.fallbackError),
     hashFunction: withDefault<IHashFunction>(hash)(options.hashFunction),
   }
 }
