@@ -1,4 +1,4 @@
-export { IRules, IRule } from './types.js'
+export { IRules, IRule, ShieldRule, IOptionsConstructor } from './types.js'
 export { shield } from './shield.js'
 export {
   rule,
