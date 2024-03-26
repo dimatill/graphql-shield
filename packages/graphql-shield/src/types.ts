@@ -67,6 +67,7 @@ export type IFallbackErrorType = Error | IFallbackErrorMapperType
 // Generator Options
 
 export interface IOptions {
+  runAuthAfterResolver: boolean
   debug: boolean
   allowExternalErrors: boolean
   fallbackRule: ShieldRule

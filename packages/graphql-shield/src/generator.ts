@@ -64,10 +64,20 @@ function generateFieldMiddlewareFromRule(
 
     // Execution
     try {
-      const res = await rule.resolve(parent, args, ctx, info, options)
-
+      let res
+      
+      if (!options.runAuthAfterResolver) {
+        res = await rule.resolve(parent, args, ctx, info, options)
+      }
+      
+      const resolverResult = await resolve(parent, args, ctx, info)
+      
+      if (options.runAuthAfterResolver) {
+        res = await rule.resolve(parent, args, ctx, info, options)
+      }
+      
       if (res === true) {
-        return await resolve(parent, args, ctx, info)
+        return resolverResult
       } else if (res === false) {
         if (typeof options.fallbackError === 'function') {
           return await options.fallbackError(null, parent, args, ctx, info)
