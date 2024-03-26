@@ -12,7 +12,7 @@
     "check": "tsc --noEmit"
   },
   "dependencies": {
-    "@types/yup": "0.29.13",
+    "@types/yup": "0.32.0",
     "object-hash": "^3.0.0",
     "tslib": "^2.4.0",
     "yup": "^0.32.0"
